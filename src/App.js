@@ -7,7 +7,11 @@ import { useState } from 'react';
 
 const App = () => {
   
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([{title : "Title", content : "something"}]);
+
+  const addTodo = (newTitle, newContent) => {
+    setTodos(...todos, {title : newTitle, contntent : newContent})
+  }
 
   return (
     <>
