@@ -1,0 +1,99 @@
+/*General*/
+#root {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 7.5% 92.5%;
+}
+
+main {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+button {
+  background-color: rgb(110, 219, 219);
+  border: none;
+  color: white;
+  border-radius: 10%;
+  padding: 1% 7.5%;
+}
+
+
+/*Header*/
+header {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  border-bottom: 0.5vh solid rgb(245, 243, 243);
+  margin-bottom: 2vh;
+  padding: 0 2.5%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0;
+}
+
+
+/*Form*/
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 0.5vh;
+  margin: 1vh 0;
+}
+
+fieldset > span {
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 0.5vh;
+}
+
+textarea {
+  border-radius: 7.5px;
+  padding: 0;
+  margin: 0;
+}
+
+.form_titles {
+  font-weight: bold;
+}
+
+#tA1 {
+  width: 50%;
+}
+
+#tA2 {
+  width: 100%;
+}
+
+
+/*Todos*/
+#todos > h1 {
+  font-size: large;
+}
+
+.todo_articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo_articles > article{
+  max-width: 28.3%;
+  margin: 2.5% 2.5%;
+}
+
+.todo_articles > article > h2 {
+  font-size: medium;
+}
+
+.todo_articles > article > span {
+  display: flex;
+  justify-content: flex-end;
+}

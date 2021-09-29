@@ -5,7 +5,7 @@ const App = () => {
   
   
   return (
-    <body>
+    <>
       <header>
         {/*navigation */}
       </header>
@@ -13,7 +13,7 @@ const App = () => {
         {/*form */}
         <Todos />
       </main>
-    </body>
+    </>
   );
 }
 
