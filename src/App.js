@@ -1,16 +1,18 @@
 import './App.css';
 import Todos from './components/Todos';
+import Form from './components/Form';
+import Navigation from './components/Navigation';
+
 
 const App = () => {
-  
   
   return (
     <>
       <header>
-        {/*navigation */}
+        <Navigation />
       </header>
       <main>
-        {/*form */}
+        <Form />
         <Todos />
       </main>
     </>

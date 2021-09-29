@@ -4,7 +4,7 @@ const Todo = () => {
         <article>
             <h2>Todotitle</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span><button>Add</button></span>
+            <span><button>Complete</button></span>
         </article>
     );
 }

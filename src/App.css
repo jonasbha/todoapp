@@ -1,5 +1,10 @@
+/*
+    Stygg header og font, men times up
+*/
+
 /*General*/
 #root {
+  /* kan se rart ut avhengig av skjerm-bredde uten media query*/
   padding: 0;
   margin: 0;
   display: grid;
@@ -12,12 +17,17 @@ main {
   grid-column-start: 2;
 }
 
+main > * {
+  margin: 5vh 0;
+}
+
 button {
   background-color: rgb(110, 219, 219);
   border: none;
   color: white;
   border-radius: 10%;
   padding: 1% 7.5%;
+  font-weight: bolder;
 }
 
 
@@ -28,6 +38,7 @@ header {
   border-bottom: 0.5vh solid rgb(245, 243, 243);
   margin-bottom: 2vh;
   padding: 0 2.5%;
+  box-shadow: 0 -10px 5px -6px rgb(209, 206, 206) inset;
 }
 
 nav {
