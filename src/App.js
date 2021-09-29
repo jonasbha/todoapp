@@ -2,10 +2,13 @@ import './App.css';
 import Todos from './components/Todos';
 import Form from './components/Form';
 import Navigation from './components/Navigation';
+import { useState } from 'react';
 
 
 const App = () => {
   
+  const [todos, setTodos] = useState([]);
+
   return (
     <>
       <header>
@@ -13,7 +16,7 @@ const App = () => {
       </header>
       <main>
         <Form />
-        <Todos />
+        <Todos list={todos}/>
       </main>
     </>
   );

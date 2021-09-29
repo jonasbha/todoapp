@@ -1,9 +1,9 @@
-const Todo = () => {
+const Todo = ({title, content}) => {
 
     return (
         <article>
-            <h2>Todotitle</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>{title}</h2>
+            <p>{content}</p>
             <span><button>Complete</button></span>
         </article>
     );
