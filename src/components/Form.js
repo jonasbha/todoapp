@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Form = ({ setTodos }) => {
+const Form = ({ addTodos }) => {
 
     const [newTitle, setNewTitle] = useState('');
     const [newContent, setNewContent] = useState('');
@@ -15,7 +15,7 @@ const Form = ({ setTodos }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setTodos((prev) => [...prev, {title : newTitle, content : newContent}]);
+        addTodos((prev) => [...prev, {title : newTitle, content : newContent}]);
       }
 
     return (

@@ -2,8 +2,6 @@ import Todo from './Todo';
 
 const Todos = ({list}) => {
 
-
-
     return (
         <section id="todos">
             <h1>My Todos</h1>
