@@ -1,10 +1,14 @@
-const Todo = ({title, content}) => {
+const Todo = ({title, content, list, deleteTodo, current}) => {
+
+    const handleClick = () => {
+        deleteTodo(list.filter(item => item !== current));
+    }
 
     return (
         <article>
             <h2>{title}</h2>
             <p>{content}</p>
-            <span><button>Complete</button></span>
+            <span><button onClick={handleClick}>Complete</button></span>
         </article>
     );
 }
